@@ -1,0 +1,11 @@
+#header-img {
+    display     : block;
+    margin-left : auto;
+    margin-right: 0;
+    width       : 40%;
+  }
+  
+  #nav-bar{
+    text-align: left;
+    
+  }
