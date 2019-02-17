@@ -1,0 +1,24 @@
+#header-img {
+  display     : block;
+  margin-left : auto;
+  margin-right: 0;
+  width       : 40%;
+}
+
+#nav-bar{
+  text-align: left;
+  
+}
+
+@media only screen and (max-width: 600px) {
+  div.example {
+    font-size: 30px;
+  }
+}
+
+iframe {
+  display: flex;
+  width  : 500px;  /* Or whatever */
+  height : 300px;  /* Or whatever */
+  margin : auto;   /* Magic! */
+}
