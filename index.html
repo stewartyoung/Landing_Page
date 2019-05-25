@@ -8,32 +8,127 @@
   <title>Product Landing Page</title>
   
   <!--  Styles  -->
-  <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
+  <link href="./resources/index.css" type="text/css" rel="stylesheet">
+  <script src="./resources/index.js"></script>
 </head>
 
 <body>
+<html>
+<div id="page-wrapper">
   <header id="header">
+    <div class="logo">
+      <img
+        id="header-img"
+        src="https://s-f.scribdassets.com/images/landing/home2_landing/scribd_logo_horiz_small.svg?1550011407" alt="Scribd logo"
+        alt="original trombones logo"
+      />
+    </div>
+
     <nav id="nav-bar">
-      <a href="#html" class="nav-link">HTML</a> |      
-      <a href="#css" class="nav-link">CSS</a> |  
-      <a href="#javascript" class="nav-link">JavaScript</a>
+      <ul>
+        <li><a class="nav-link" href="#features">Features</a></li>
+        <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+        <li><a class="nav-link" href="#top-sellers">Top-sellers</a></li>
+      </ul>
     </nav>
-    <img id="header-img" src="https://s-f.scribdassets.com/images/landing/home2_landing/scribd_logo_horiz_small.svg?1550011407" alt="Scribd logo">
   </header>
 
-  <iframe id="video" width="420" height="315"
-          src="https://www.youtube.com/embed/mkdvv2bRzhg">
-  </iframe>
+  <div class="container"></div>
 
-  <section id="html"> </section>
-  <section id="css"> </section>
-  <section id="javascript"> </section>
+  <section id="hero">
+    <h2>Books, Audiobooks and Key Insights</h2>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input
+        name="email"
+        id="email"
+        type="email"
+        placeholder="Enter your email address"
+        required
+      />
+      <input id="submit" type="submit" value="Get Started" class="btn" />
+    </form>
+  </section>
 
-  <form action="https://www.freecodecamp.com/email-submit" id="form">
-    <label id="email-label">Enter your email to keep up to date with all the latest updates on Scribd!</label>
-    <br/>
-    <input type="email" placeholder="email" name="email" id="email">
-    <input type="submit" id="submit">
+  <div class="container">
+    <section id="features">
+      <div class="grid">
+        <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+        <div class="desc">
+          <h2>Books</h2>
+          <p>
+           Choose from award winning books and new releases
+          </p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+        <div class="desc">
+          <h2>Audiobooks</h2>
+          <p>
+            On your commute, driving, or just fancy having a book read to you by people like Gary Vaynerchuck, Mark Manson and Stephen Fry? Scribd has you covered.
+          </p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="icon">
+          <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+        </div>
+        <div class="desc">
+          <h2>Offline Reading</h2>
+          <p>
+            Hvae a spotty internet connection? No problem. Scribd allows you to download both books and audiobooks so you can listen anytime, any place.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="how-it-works">
+      <iframe
+        id="video"
+        height="315"
+        src="https://www.youtube-nocookie.com/embed/mkdvv2bRzhg?rel=0&amp;controls=0&amp;showinfo=0"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </section>
+    <section id="top-sellers">
+      <div class="product" id="tenor">
+        <div class="level">Top Selling book</div>
+        <h2>The Alcehmist</h2>
+        <ol>
+          <img src="https://imgv2-2-f.scribdassets.com/img/word_document/254663574/149x198/c252fe4c3a/1558029916?v=1" />
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+      <div class="product" id="bass">
+        <div class="level">Top Selling Audiobook</div>
+        <h2>The Subtle Art of Not Giving a F*ck</h2>
+        <ol>
+          <img src="https://imgv2-1-f.scribdassets.com/img/audiobook_square_badge/323820252/198x198/3b38b8ea5e/1558749832?v=1" />
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+      <div class="product" id="valve">
+        <div class="level">For the budding Actuary</div>
+        <h2>Insurance Risk and Ruin</h2>
+        <ol>
+          <img src="https://imgv2-2-f.scribdassets.com/img/document/136284453/149x198/71a7d18108/0?v=1" />
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+    </section>
+    <footer>
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <span>Copyright 2016, Scribd</span>
+    </footer>
+  </div>
+</div>
 
-  </form>
+<div class="flex-container">
+  <h6>Made by Stewart Young</h6>
+</div>  
 </body>
+</html>
