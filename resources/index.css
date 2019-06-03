@@ -48,17 +48,31 @@ a {
 
 .grid {
   display: flex;
+  width: 50em;
 }
 
 header {
-  position: fixed;
+  position: absolute;
   top: 0;
+  height: 2em;
   min-height: 75px;
-  padding: 10px 10px;
+  padding: 0px 10px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: #eee;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
 }
 
 @media (max-width: 600px) {
@@ -136,6 +150,7 @@ nav > ul {
   text-align: center;
   height: 200px;
   margin-top: 50px;
+  padding-top: 6em;
 }
 
 #hero > h2 {
